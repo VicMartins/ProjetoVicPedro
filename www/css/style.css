@@ -6,6 +6,12 @@ h1{
   text-align: center;
 
 }
+p{
+  color: black;
+  font-family: fantasy;
+  text-align: left;
+
+}
 body{
   background-color: lightblue;
   height:100px;
