@@ -16,49 +16,97 @@
   
   </head>
 <body>
-        <div class="container-fluid">
+  <div class="container-fluid">
     
-    <h1>Calculadora Metabólica</h1>
-
-  <p>Informe-nos o seu sexo</p>
-
     <div class="row">
-      <div class="col-xs-6">
-        <img src="css/imagens/mulher1.png" class="img-responsive">
-    <button class="btn btn-large btn-primary"> Mulher</button>
-      </div>
-      <div class="col-xs-6">
-       <img src="css/imagens/homen1.png" class="img-responsive">
-    <button class="btn btn-large btn-danger"> Homem</button>
+      <div class="col-xs-12">
+        <h1>Calculadora Metabólica</h1>
+        <p>Informe-nos o seu sexo</p>
       </div>
     </div>
 
-    <form>
-             <div class="row">
-          <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-6">
+        <ul class="sexo-metodo">
+          <li class="sexo-metodos mulher">
+            <input value="feminino" name="sexo" type="radio" id="mulher">
+            <label for="mulher"></label>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-xs-6">
+        <ul class="sexo-metodo">
+         
+
+          <li class="sexo-metodos homem">
+            <input value="masculino" name="sexo" type="radio" id="homem">
+            <label for="homem"></label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6">
         <div class="form-group">
-      <label for="#nome">Digite o seu nome:</label>
-     <input type="name" class="form-control" id="nome" placeholder="Nome:">
+          <label for="#nome">Digite o seu nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome:">
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="#idade">Digite sua Idade:</label>
+          <input type="number" class="form-control" id="idade" placeholder="Idade:">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="#peso">Digite seu peso:</label>
+          <input type="number" class="form-control" id="peso" placeholder="Peso:">
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="#altura">Digite sua altura:</label>
+          <input type="number" class="form-control" id="altura" placeholder="Altura:">
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-12">
-  <div class="form-group">
-    <label for="#idade">Digite sua Idade:</label>
-    <input type="number" class="form-control" id="idade" placeholder="Idade:">
-  </div>
+        <div class="form-group botao">
+         <select class="form-control" name="" id="nivelAtividade">
+           <option selected disabled>Qual seu nível de atividade </option>
+           <option value="1.2">Sedentário(Pouco ou nenhum exercicio)</option>
+           <option value="1.375">Levemente ativo(ex 1 a 3 dias)</option>
+           <option value="1.55">Moderadamente ativo(ex moderado 3 a 5 dias)</option>
+           <option value="1.725">Altamente ativo(ex pesado de 5 a 6 dias)</option>
+           <option value="1.9">Extremamente ativo(ex pesado diariamente)</option>
+         </select>
+        </div>
       </div>
-  </div>
-  <div class="row">
+    </div>
+
+    <div class="row">
       <div class="col-xs-12">
-  <div class="form-group">
-    <label for="#peso">Digite seu peso:</label>
-    <input type="number" class="form-control" id="peso" placeholder="Peso:">
-  </div>
+        <div class="form-group botao">
+         <button class="btn btn-default" id="calcular">Calcular</button>
+        </div>
       </div>
-  </div>
-  </form>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group visor">
+          <input type="text" id="resultado" class="form-control" readonly>
+        </div>
+      </div>
+    </div>
 
   </div>
 

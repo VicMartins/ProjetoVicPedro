@@ -2,25 +2,125 @@
 
 h1{
   color: black;
-  font-family: fantasy;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
+  font-size: 20px;
 
 }
 p{
   color: black;
-  font-family: fantasy;
   text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:15px;
 
 }
 body{
   background-color: lightblue;
   height:100px;
   width: 100%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
 }
+div.botao{
+ text-align:center;
+ margin-right: 10%;
+}
+input#resultado{
+ width: 100%;
+ height: 150px;
+ 
+}
+div.visor{
+ margin-left: 1.5%;
+}
+
 
 img{
   border-radius: 80px;
+  width: 100px;
+  height: 100px;
 }
 .btn{
   margin-left: 43px ;
 }
+
+//Radio button
+ul{
+  list-style-type: none;
+}
+
+.sexo-metodo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sexo-metodo:after {
+  content: "";
+  clear: both;
+}
+
+.sexo-metodos {
+  border: none;
+  box-sizing: border-box;
+  float: left;
+  height: 70px;
+  position: relative;
+  width: 120px;
+   
+}
+
+.sexo-metodos + .sexo-metodos {
+  margin-left: 25px;
+}
+.sexo-metodos label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+  
+}
+
+.homem label {
+  background-image: url(imagens/homen1.png);
+  border-radius: 10px;
+}
+
+.mulher label {
+  background-image: url(imagens/mulher1.png);
+  border-radius: 10px;
+}
+.sexo-metodo input:focus + label {
+  outline: 2px dotted #21b4d0;
+ 
+}
+.sexo-metodo input:checked + label {
+  outline: 4px solid #21b4d0;
+}
+.sexo-metodo input:checked + label:after {
+  background: url(checked.png);
+  bottom: -10px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  width: 20px;
+  
+}
+@-moz-document url-prefix() {
+  .sexo-metodo input:checked + label:after {
+    bottom: 0;
+    right: 0;
+    background-color: #21b4d0;
+  
+  }
+}
+//Fim radio
