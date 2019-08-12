@@ -22,6 +22,7 @@ $(document).on("click","#calcular",function(){
    sexomasculino = $("input[id = 'homem']:checked").val();
    nivel = $("#nivelAtividade").val();
 
+   altura = altura * 100;
 
   if(sexomasculino == 'masculino'){
 
